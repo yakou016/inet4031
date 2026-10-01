@@ -1,25 +1,44 @@
-# Week 4: Docker Compose with PostgreSQL
+# Week 4: Docker Compose and Kubernetes
 
-This runs the incident tracker and PostgreSQL together. PostgreSQL stores ticket data in a Docker named volume, so tickets remain after the containers are removed and recreated.
+This project runs the incident tracker with a Flask web container and a PostgreSQL database. Docker Compose was used first, and the stack was then converted into Kubernetes manifests using kompose.
+
+PostgreSQL uses persistent storage so ticket data can survive when a container or pod is replaced.
 
 ## Requirements
 
-Docker with Compose and a week-4/.env file. Copy .env.example to .env, then replace the example values with real credentials. Do not commit .env.
+The week-4/.env file contains the database credentials and Flask secret. This file is ignored by Git and should never be committed.
 
-## Run
+## Run with Kubernetes
 
-From week-4/:
+From week-4/, create the Kubernetes Secret from the local .env file:
 
-    docker compose up -d --build
+    kubectl create secret generic db-credentials --from-env-file=.env
+
+If the Secret already exists, this command will report that it already exists.
+
+Apply the Kubernetes manifests:
+
+    kubectl apply -f db-data-persistentvolumeclaim.yaml
+    kubectl apply -f env-configmap.yaml
+    kubectl apply -f db-service.yaml
+    kubectl apply -f web-service.yaml
+    kubectl apply -f db-deployment.yaml
+    kubectl apply -f web-deployment.yaml
+
+Docker Compose is stopped. Kubernetes now runs the application.
 
 ## Check
 
-    docker compose ps
+    kubectl get pods
+    kubectl get svc
+    kubectl get pvc
 
-Open http://localhost:8080 in a browser. Both containers should report healthy.
+Both pods should show 1/1 Running, and the PVC should show Bound.
 
-## Stop
+## Access the Application
 
-    docker compose down
+Run:
 
-This removes the containers but keeps the database volume. Adding -v also deletes the volume and its ticket data.
+    kubectl port-forward --address 0.0.0.0 service/web 8080:8080
+
+Keep that terminal open and visit http://localhost:8080 in the Windows browser.
