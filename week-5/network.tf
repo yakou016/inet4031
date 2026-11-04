@@ -1,7 +1,6 @@
-# Only the web pods may open connections to the database pods.
-resource "kubernetes_network_policy_v1" "db_from_web_only" {
+resource "kubernetes_network_policy_v1" "db_clients" {
   metadata {
-    name = "db-from-web-only"
+    name = "db-clients"
   }
 
   spec {
@@ -15,6 +14,12 @@ resource "kubernetes_network_policy_v1" "db_from_web_only" {
       from {
         pod_selector {
           match_labels = { app = "web" }
+        }
+      }
+
+      from {
+        pod_selector {
+          match_labels = { app = "db-exporter" }
         }
       }
 
