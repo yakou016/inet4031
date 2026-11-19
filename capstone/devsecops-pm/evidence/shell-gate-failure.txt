@@ -1,0 +1,21 @@
+shell script lint	Lint all tracked shell scripts	﻿2026-11-19T02:51:25.4799343Z ##[group]Run git ls-files -z '*.sh' | xargs -0 -r shellcheck
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.4799875Z [36;1mgit ls-files -z '*.sh' | xargs -0 -r shellcheck[0m
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.4838487Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.4838909Z ##[endgroup]
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8647748Z
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8649161Z In capstone/devsecops-pm/scripts/ci-shell-negative.sh line 4:
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8649874Z if true; then
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8650350Z ^-- SC1046 (error): Couldn't find 'fi' for this 'if'.
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8651002Z ^-- SC1073 (error): Couldn't parse this if expression. Fix to allow more checks.
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8651496Z
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8651507Z
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8651773Z In capstone/devsecops-pm/scripts/ci-shell-negative.sh line 6:
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8652165Z
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8652444Z ^-- SC1047 (error): Expected 'fi' matching previously mentioned 'if'.
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8653168Z ^-- SC1072 (error): Expected 'fi'. Fix any mentioned problems and try again.
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8653722Z
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8653880Z For more information:
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8654539Z   https://www.shellcheck.net/wiki/SC1046 -- Couldn't find 'fi' for this 'if'.
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8655435Z   https://www.shellcheck.net/wiki/SC1047 -- Expected 'fi' matching previously...
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8656301Z   https://www.shellcheck.net/wiki/SC1072 -- Expected 'fi'. Fix any mentioned ...
+shell script lint	Lint all tracked shell scripts	2026-11-19T02:51:25.8689972Z ##[error]Process completed with exit code 123.

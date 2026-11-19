@@ -1,0 +1,21 @@
+2026-11-19T02:51:15+00:00
+{"headRefOid":"9535d336c071f4ae29c5114035f3a6213129ef8e","number":25,"url":"https://github.com/yakou016/inet4031/pull/25"}
+Dockerfile lint	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433153
+container vulnerability scan	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302432781
+performance smoke test	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296690/job/135302432049
+render the Prometheus chart	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302432713
+security scan	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433082
+shell script lint	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433176
+tofu fmt and validate	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433095
+gh pr checks exit code: 8
+2026-11-19T02:52:44+00:00
+{"headRefOid":"9535d336c071f4ae29c5114035f3a6213129ef8e","number":25,"url":"https://github.com/yakou016/inet4031/pull/25"}
+shell script lint	fail	8s	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433176
+Dockerfile lint	pass	4s	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433153
+container vulnerability scan	pass	36s	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302432781
+performance smoke test	pass	1m23s	https://github.com/yakou016/inet4031/actions/runs/44447296690/job/135302432049
+render the Prometheus chart	pass	9s	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302432713
+security scan	pass	46s	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433082
+tofu fmt and validate	pass	8s	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433095
+gh pr checks exit code: 1
+{"mergedAt":null,"number":25,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/25"}

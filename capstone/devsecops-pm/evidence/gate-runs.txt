@@ -8,3 +8,71 @@ security scan	pass	26s	https://github.com/yakou016/inet4031/actions/runs/4444508
 shell script lint	pass	11s	https://github.com/yakou016/inet4031/actions/runs/44445081872/job/135295147443
 tofu fmt and validate	pass	11s	https://github.com/yakou016/inet4031/actions/runs/44445081703/job/135295147003
 gh pr checks exit code: 0
+
+Source: dockerfile-gate.txt
+2026-11-19T02:47:31+00:00
+{"headRefOid":"8190c4a41c38c239bd440ce0c19b7cdf78f8f566","number":24,"url":"https://github.com/yakou016/inet4031/pull/24"}
+Dockerfile lint	fail	6s	https://github.com/yakou016/inet4031/actions/runs/44446691231/job/135300437457
+container vulnerability scan	pass	28s	https://github.com/yakou016/inet4031/actions/runs/44446691231/job/135300437289
+performance smoke test	pass	1m20s	https://github.com/yakou016/inet4031/actions/runs/44446691049/job/135300436472
+render the Prometheus chart	pass	10s	https://github.com/yakou016/inet4031/actions/runs/44446690913/job/135300436173
+security scan	pass	26s	https://github.com/yakou016/inet4031/actions/runs/44446690913/job/135300436388
+shell script lint	pass	11s	https://github.com/yakou016/inet4031/actions/runs/44446691231/job/135300437608
+tofu fmt and validate	pass	7s	https://github.com/yakou016/inet4031/actions/runs/44446690913/job/135300436520
+gh pr checks exit code: 1
+{"mergedAt":null,"number":24,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/24"}
+
+Source: shell-gate.txt
+2026-11-19T02:51:15+00:00
+{"headRefOid":"9535d336c071f4ae29c5114035f3a6213129ef8e","number":25,"url":"https://github.com/yakou016/inet4031/pull/25"}
+Dockerfile lint	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433153
+container vulnerability scan	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302432781
+performance smoke test	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296690/job/135302432049
+render the Prometheus chart	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302432713
+security scan	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433082
+shell script lint	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433176
+tofu fmt and validate	pending	0	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433095
+gh pr checks exit code: 8
+2026-11-19T02:52:44+00:00
+{"headRefOid":"9535d336c071f4ae29c5114035f3a6213129ef8e","number":25,"url":"https://github.com/yakou016/inet4031/pull/25"}
+shell script lint	fail	8s	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433176
+Dockerfile lint	pass	4s	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302433153
+container vulnerability scan	pass	36s	https://github.com/yakou016/inet4031/actions/runs/44447296781/job/135302432781
+performance smoke test	pass	1m23s	https://github.com/yakou016/inet4031/actions/runs/44447296690/job/135302432049
+render the Prometheus chart	pass	9s	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302432713
+security scan	pass	46s	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433082
+tofu fmt and validate	pass	8s	https://github.com/yakou016/inet4031/actions/runs/44447296776/job/135302433095
+gh pr checks exit code: 1
+{"mergedAt":null,"number":25,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/25"}
+
+Source: health-content-gate.txt
+2026-11-19T03:00:32+00:00
+{"headRefOid":"8b9da6f0f53a2acb05f1ef1b90d4ae31842ad576","number":26,"url":"https://github.com/yakou016/inet4031/pull/26"}
+performance smoke test	fail	1m19s	https://github.com/yakou016/inet4031/actions/runs/44447928992/job/135304509490
+Dockerfile lint	pass	12s	https://github.com/yakou016/inet4031/actions/runs/44447929063/job/135304510055
+container vulnerability scan	pass	25s	https://github.com/yakou016/inet4031/actions/runs/44447929063/job/135304509941
+render the Prometheus chart	pass	13s	https://github.com/yakou016/inet4031/actions/runs/44447928895/job/135304509634
+security scan	pass	27s	https://github.com/yakou016/inet4031/actions/runs/44447928895/job/135304509373
+shell script lint	pass	12s	https://github.com/yakou016/inet4031/actions/runs/44447929063/job/135304510045
+tofu fmt and validate	pass	7s	https://github.com/yakou016/inet4031/actions/runs/44447928895/job/135304509674
+gh pr checks exit code: 1
+{"mergedAt":null,"number":26,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/26"}
+2026-11-19T03:05:11+00:00
+{"mergedAt":null,"number":24,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/24"}
+{"mergedAt":null,"number":25,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/25"}
+{"mergedAt":null,"number":26,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/26"}
+2026-11-19T03:09:11+00:00
+{"mergedAt":null,"number":24,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/24"}
+{"mergedAt":null,"number":25,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/25"}
+{"mergedAt":null,"number":26,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/26"}
+
+FIFTH CAPSTONE PR
+2026-11-19T03:14:23+00:00
+{"headRefOid":"706c3735455167a61f52c64139f7bfb009e71c67","number":27,"url":"https://github.com/yakou016/inet4031/pull/27"}
+Dockerfile lint	pass	14s	https://github.com/yakou016/inet4031/actions/runs/44449527238/job/135309771609
+container vulnerability scan	pass	25s	https://github.com/yakou016/inet4031/actions/runs/44449527238/job/135309772114
+performance smoke test	pass	1m18s	https://github.com/yakou016/inet4031/actions/runs/44449527315/job/135309771959
+render the Prometheus chart	pass	8s	https://github.com/yakou016/inet4031/actions/runs/44449527219/job/135309772065
+security scan	pass	25s	https://github.com/yakou016/inet4031/actions/runs/44449527219/job/135309771554
+shell script lint	pass	29s	https://github.com/yakou016/inet4031/actions/runs/44449527238/job/135309772175
+tofu fmt and validate	pass	7s	https://github.com/yakou016/inet4031/actions/runs/44449527219/job/135309771865

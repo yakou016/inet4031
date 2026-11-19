@@ -1,0 +1,13 @@
+2026-11-19T03:00:32+00:00
+{"headRefOid":"8b9da6f0f53a2acb05f1ef1b90d4ae31842ad576","number":26,"url":"https://github.com/yakou016/inet4031/pull/26"}
+performance smoke test	fail	1m19s	https://github.com/yakou016/inet4031/actions/runs/44447928992/job/135304509490
+Dockerfile lint	pass	12s	https://github.com/yakou016/inet4031/actions/runs/44447929063/job/135304510055
+container vulnerability scan	pass	25s	https://github.com/yakou016/inet4031/actions/runs/44447929063/job/135304509941
+render the Prometheus chart	pass	13s	https://github.com/yakou016/inet4031/actions/runs/44447928895/job/135304509634
+security scan	pass	27s	https://github.com/yakou016/inet4031/actions/runs/44447928895/job/135304509373
+shell script lint	pass	12s	https://github.com/yakou016/inet4031/actions/runs/44447929063/job/135304510045
+tofu fmt and validate	pass	7s	https://github.com/yakou016/inet4031/actions/runs/44447928895/job/135304509674
+gh pr checks exit code: 1
+{"mergedAt":null,"number":26,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/26"}
+{"mergedAt":null,"number":26,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/26"}
+{"mergedAt":null,"number":26,"state":"CLOSED","url":"https://github.com/yakou016/inet4031/pull/26"}

@@ -1,0 +1,7 @@
+Dockerfile lint	Lint the current web Dockerfile	﻿2026-11-19T02:46:13.2666890Z ##[group]Run hadolint week-4/app/Dockerfile
+Dockerfile lint	Lint the current web Dockerfile	2026-11-19T02:46:13.2667273Z [36;1mhadolint week-4/app/Dockerfile[0m
+Dockerfile lint	Lint the current web Dockerfile	2026-11-19T02:46:13.2698526Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Dockerfile lint	Lint the current web Dockerfile	2026-11-19T02:46:13.2698861Z ##[endgroup]
+Dockerfile lint	Lint the current web Dockerfile	2026-11-19T02:46:13.3003798Z week-4/app/Dockerfile:20 DL3003 [1m[93mwarning[0m: Use WORKDIR to switch to a directory
+Dockerfile lint	Lint the current web Dockerfile	2026-11-19T02:46:13.3016730Z week-4/app/Dockerfile:20 SC2164 [1m[93mwarning[0m: Use 'cd ... || exit' or 'cd ... || return' in case cd fails.
+Dockerfile lint	Lint the current web Dockerfile	2026-11-19T02:46:13.3029343Z ##[error]Process completed with exit code 1.
