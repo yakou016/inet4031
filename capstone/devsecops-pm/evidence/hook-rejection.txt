@@ -1,0 +1,25 @@
+[WARNING] Unstaged files detected.
+[INFO] Stashing unstaged files to /home/anthonyyakoub/.cache/pre-commit/patch1795054336-29084.
+ShellCheck...............................................................Failed
+- hook id: shellcheck
+- exit code: 1
+
+In capstone/devsecops-pm/hook-rejection-demo.sh line 3:
+if true; then
+^-- SC1046 (error): Couldn't find 'fi' for this 'if'.
+^-- SC1073 (error): Couldn't parse this if expression. Fix to allow more checks.
+
+
+In capstone/devsecops-pm/hook-rejection-demo.sh line 5:
+
+^-- SC1047 (error): Expected 'fi' matching previously mentioned 'if'.
+^-- SC1072 (error): Expected 'fi'. Fix any mentioned problems and try again.
+
+For more information:
+  https://www.shellcheck.net/wiki/SC1046 -- Couldn't find 'fi' for this 'if'.
+  https://www.shellcheck.net/wiki/SC1047 -- Expected 'fi' matching previously...
+  https://www.shellcheck.net/wiki/SC1072 -- Expected 'fi'. Fix any mentioned ...
+
+Hadolint.............................................(no files to check)Skipped
+YAML lint................................................................Passed
+[INFO] Restored changes from /home/anthonyyakoub/.cache/pre-commit/patch1795054336-29084.

@@ -1,0 +1,132 @@
+name: Capstone checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  dockerfile:
+    name: Dockerfile lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install verified Hadolint
+        run: |
+          curl -fsSL --retry 3 \
+            -o "$RUNNER_TEMP/hadolint" \
+            https://github.com/hadolint/hadolint/releases/download/v2.15.1/hadolint-linux-x86_64
+          printf '%s  %s\n' \
+            c7187db94eeeeca956519a6af171adc31453941a1e777961f6e680f697c8c507 \
+            "$RUNNER_TEMP/hadolint" | sha256sum -c -
+          sudo install -m 0755 "$RUNNER_TEMP/hadolint" /usr/local/bin/hadolint
+          hadolint --version
+
+      - name: Lint the current web Dockerfile
+        run: hadolint week-4/app/Dockerfile
+
+  shell:
+    name: shell script lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install and record ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends shellcheck
+          shellcheck --version
+
+      - name: Lint all tracked shell scripts
+        run: git ls-files -z '*.sh' | xargs -0 -r shellcheck
+
+      - name: Validate repository YAML
+        run: |
+          python3 -m venv "$RUNNER_TEMP/yaml-lint"
+          "$RUNNER_TEMP/yaml-lint/bin/pip" install yamllint==1.38.0
+          "$RUNNER_TEMP/yaml-lint/bin/yamllint" --version
+          export DEVSECOPS_VENV="$RUNNER_TEMP/yaml-lint"
+          git ls-files -z '*.yml' '*.yaml' |
+            xargs -0 -r bash capstone/devsecops-pm/scripts/lint-yaml.sh
+
+  image:
+    name: container vulnerability scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install verified Trivy
+        run: |
+          curl -fsSL --retry 3 \
+            -o "$RUNNER_TEMP/trivy.tgz" \
+            https://github.com/aquasecurity/trivy/releases/download/v0.76.2/trivy_0.76.2_Linux-64bit.tar.gz
+          printf '%s  %s\n' \
+            bc0fc726e017b8927a62b2d3531d7a84ee01769daf5c99ed866dced54089fdbf \
+            "$RUNNER_TEMP/trivy.tgz" | sha256sum -c -
+          mkdir "$RUNNER_TEMP/trivy-bin"
+          tar -xzf "$RUNNER_TEMP/trivy.tgz" \
+            -C "$RUNNER_TEMP/trivy-bin" trivy
+          sudo install -m 0755 "$RUNNER_TEMP/trivy-bin/trivy" /usr/local/bin/trivy
+          trivy --version
+
+      - name: Build an isolated scan image
+        run: |
+          mkdir -p scan-reports
+          docker build --pull -t week-4-web:ci-scan week-4/app
+          docker image inspect week-4-web:ci-scan > scan-reports/image.json
+
+      - name: Report all HIGH and CRITICAL findings
+        run: |
+          trivy --version | tee scan-reports/trivy-version.txt
+          trivy image \
+            --image-src docker \
+            --scanners vuln \
+            --severity HIGH,CRITICAL \
+            --format table \
+            --no-progress \
+            --timeout 10m \
+            --exit-code 0 \
+            week-4-web:ci-scan \
+            2>&1 | tee scan-reports/full-report.txt
+
+      - name: Fail on fixable HIGH or CRITICAL findings
+        run: |
+          trivy image \
+            --image-src docker \
+            --scanners vuln \
+            --severity HIGH,CRITICAL \
+            --ignore-unfixed \
+            --format table \
+            --no-progress \
+            --timeout 10m \
+            --exit-code 1 \
+            week-4-web:ci-scan \
+            2>&1 | tee scan-reports/gate-report.txt
+
+      - name: Preserve scan evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: container-scan-reports
+          path: scan-reports/
+          retention-days: 30
+          if-no-files-found: warn

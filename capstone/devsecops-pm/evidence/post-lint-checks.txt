@@ -1,0 +1,17 @@
+2026-11-19 01:57:23 Backed up 3 tickets to /home/anthonyyakoub/backups/db-20261119-015723.dump
+PASS  database accepts connections
+PASS  exporter reaches the database
+PASS  newest backup is 1 seconds old
+PASS  newest backup lists ticket data
+PASS  backup cron entry exists
+All checks passed.
+tickets: 3
+PASS: ShellCheck and Hadolint
+## capstone-kickoff
+ M week-10/check.sh
+ M week-10/sql.sh
+ M week-9/backup.sh
+ M week-9/check.sh
+ M week-9/restore.sh
+ M week-9/sql.sh
+?? capstone/

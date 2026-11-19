@@ -12,6 +12,8 @@ ok()  { echo "PASS  $*"; }
 bad() { echo "FAIL  $*"; failed=1; }
 
 q() {
+  # Database variables must expand inside the pod, not on the VM.
+  # shellcheck disable=SC2016
   printf '%s\n' "$1" | kubectl exec -i deploy/db -- sh -c \
     'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -v ON_ERROR_STOP=1 -tA' 2>/dev/null
 }

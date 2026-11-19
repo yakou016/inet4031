@@ -20,6 +20,8 @@ echo "WARNING: This will replace the current database contents using $FILE"
 read -r -p 'Type RESTORE to continue: ' answer
 [ "$answer" = "RESTORE" ] || { echo "Cancelled."; exit 1; }
 
+# Database variables must expand inside the pod, not on the VM.
+# shellcheck disable=SC2016
 kubectl exec -i deploy/db -- sh -c \
   'pg_restore -U "$POSTGRES_USER" -d "$POSTGRES_DB" --clean --if-exists --no-owner --exit-on-error' < "$FILE"
 

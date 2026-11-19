@@ -1,0 +1,8 @@
+BEFORE CAPSTONE CHANGES
+2026-11-19T01:32:29+00:00
+Ruleset 26079345
+{"id":26079345,"name":"protect-master","target":"branch","source_type":"Repository","source":"yakou016/inet4031","enforcement":"active","conditions":{"ref_name":{"exclude":[],"include":["~DEFAULT_BRANCH"]}},"rules":[{"type":"pull_request","parameters":{"required_approving_review_count":0,"dismiss_stale_reviews_on_push":false,"required_reviewers":[],"require_code_owner_review":false,"require_last_push_approval":false,"required_review_thread_resolution":false,"require_extra_approval_for_unattributed_changes":true,"allowed_merge_methods":["merge","squash","rebase"]}},{"type":"required_status_checks","parameters":{"strict_required_status_checks_policy":false,"do_not_enforce_on_create":false,"required_status_checks":[{"context":"tofu fmt and validate"},{"context":"render the Prometheus chart"},{"context":"security scan"}]}}],"node_id":"RRS_lACqUmVwb3NpdG9yec5ShAYxzgGN8HE","created_at":"2026-10-28T21:55:35.994Z","updated_at":"2026-10-28T21:55:36.023Z","bypass_actors":[],"current_user_can_bypass":"never","_links":{"self":{"href":"https://api.github.com/repos/yakou016/inet4031/rulesets/26079345"},"html":{"href":"https://github.com/yakou016/inet4031/rules/26079345"}}}
+Effective required checks on master:
+tofu fmt and validate
+render the Prometheus chart
+security scan

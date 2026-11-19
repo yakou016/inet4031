@@ -1,0 +1,4 @@
+PASS: retention selects only the 3 oldest of 15 files
+PASS: newest-backup selection is correct
+PASS: filenames containing spaces are preserved
+Dummy files remain in: /tmp/tmp.rgYqS0TO6v

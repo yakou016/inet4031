@@ -10,6 +10,8 @@ if [ "$#" -gt 1 ]; then
 fi
 
 psql_in_pod() {
+  # Database variables and arguments must expand inside the pod.
+  # shellcheck disable=SC2016
   kubectl exec -i deploy/db -- sh -c \
     'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -v ON_ERROR_STOP=1 "$@"' sh "$@"
 }
