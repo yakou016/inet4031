@@ -68,12 +68,13 @@ Evidence paths below are relative to capstone/devsecops-pm/evidence/.
 8. Real PR coverage
    Expect all four capstone checks on at least five real PRs, including
    three bad PRs closed without merging and a merged good PR.
-   Result: four PRs recorded so far.
+   Result: five PRs recorded, covering PRs #23 through #27.
    PR #23: seven checks passed and the good change was merged.
    PR #24: Dockerfile lint failed; closed without merging.
    PR #25: shell script lint failed; closed without merging.
    PR #26: expanded performance check failed; closed without merging.
-   Fifth-PR coverage is still pending.
+   PR #27: seven checks passed on the revision recorded in gate-runs.txt.
+   Fifth-PR coverage is verified for that recorded revision.
    Evidence: gate-runs.txt and the individual failure logs.
    The four capstone checks are Dockerfile lint, shell script lint,
    container vulnerability scan, and the expanded performance smoke test.
@@ -99,5 +100,5 @@ No check results, measurements, timestamps, or URLs were rewritten.
 
 ## Final signoff
 
-Pending fifth-PR coverage, release and rollback tests, fresh-VM rebuild,
-and final review of the evidence. This is not a completed final signoff.
+Pending release and rollback tests, fresh-VM rebuild, and final review
+of the evidence. This is not a completed final signoff.
