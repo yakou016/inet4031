@@ -1,0 +1,13 @@
+2026-11-19T03:27:52+00:00
+Candidate: week-4-web:rc-v0.1.0
+Source commit: 56bde4e7eee2ed1c817ffc297216741a5e315e79
+Application tree: 01b155fb3477e5219d7e26c6b5fd28e9380c18fb
+Image ID: sha256:9d948ce98834b0a9d8288b114f43b51daf0852ba096898758fda0854106b7371
+Revision: 56bde4e7eee2ed1c817ffc297216741a5e315e79
+Version: v0.1.0
+Version: 0.76.2
+Vulnerability DB:
+  Version: 2
+  UpdatedAt: 2026-11-19 01:05:40.842299544 +0000 UTC
+  NextUpdate: 2026-11-20 01:05:40.842299414 +0000 UTC
+  DownloadedAt: 2026-11-19 02:21:11.495569636 +0000 UTC

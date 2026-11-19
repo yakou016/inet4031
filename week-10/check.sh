@@ -59,11 +59,14 @@ else
   bad "expected a 500m CPU limit in the cluster and in week-5/web.tf (live: '$live_cpu')"
 fi
 
-if [[ "$live_image" == "week-4-web:v2" || "$live_image" == */week-4-web:v2 ]] &&
-   grep -Fq 'week-4-web:v2' "$ROOT/week-5/web.tf"; then
-  ok "web runs the v2 image, in the cluster and in week-5/web.tf"
+expected_image="$(sed -nE \
+  's/^[[:space:]]*image[[:space:]]*=[[:space:]]*"([^"]+)".*/\1/p' \
+  "$ROOT/week-5/web.tf")"
+if [[ "$expected_image" =~ ^docker\.io/library/week-4-web:v[0-9]+\.[0-9]+\.[0-9]+$ ]] &&
+   [ "$live_image" = "$expected_image" ]; then
+  ok "web runs the declared release image ($expected_image)"
 else
-  bad "expected week-4-web:v2 in the cluster and in week-5/web.tf (live: '$live_image')"
+  bad "expected the declared semantic release image '$expected_image' (live: '$live_image')"
 fi
 
 ( cd "$ROOT/week-5" && tofu plan -input=false -detailed-exitcode >/dev/null 2>&1 )

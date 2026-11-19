@@ -1,0 +1,8 @@
+2026-11-19T03:33:59+00:00
+Release image: docker.io/library/week-4-web:v0.1.0
+Tested image ID: sha256:9d948ce98834b0a9d8288b114f43b51daf0852ba096898758fda0854106b7371
+Docker image ID: sha256:9d948ce98834b0a9d8288b114f43b51daf0852ba096898758fda0854106b7371
+Source revision: 56bde4e7eee2ed1c817ffc297216741a5e315e79
+docker.io/library/week-4-web                             latest                  954e3684da607       51.4MB
+docker.io/library/week-4-web                             v0.1.0                  bd70c7cdbdcdb       51.6MB
+docker.io/library/week-4-web                             v2                      2a5f15846ed24       51.4MB
