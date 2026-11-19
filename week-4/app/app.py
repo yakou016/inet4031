@@ -48,7 +48,7 @@ init_db()
 
 @app.route("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "not_ok"}
 
 
 @app.route("/")
