@@ -1,0 +1,7 @@
+2026-11-19T03:39:46+00:00
+Release: docker.io/library/week-4-web:v0.1.0
+Manifest: sha256:9d948ce98834b0a9d8288b114f43b51daf0852ba096898758fda0854106b7371
+Config/CRI ID: sha256:bd70c7cdbdcdb4778461955327272baf8f59c3e66285250ed2ae15517c3b77e2
+Source: 56bde4e7eee2ed1c817ffc297216741a5e315e79
+Version: v0.1.0
+PASS: imported release matches the tested candidate.

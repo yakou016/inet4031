@@ -12,3 +12,4 @@ yamllint 1.38.0
 k6 v2.3.0 (commit/e088784614, go1.26.8, linux/amd64)
 Haskell Dockerfile Linter 2.15.1
 Version: 0.76.2
+git-cliff 2.14.2
