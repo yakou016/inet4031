@@ -1,0 +1,53 @@
+2026-11-19T01:46:42+00:00
+Dockerfile lint
+Hadolint exit code: 0
+Shell script lint
+
+In week-10/check.sh line 16:
+    'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -v ON_ERROR_STOP=1 -tA' 2>/dev/null
+    ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+
+In week-10/sql.sh line 14:
+    'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -v ON_ERROR_STOP=1 "$@"' sh "$@"
+    ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+
+In week-9/backup.sh line 26:
+    'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -tA -v ON_ERROR_STOP=1 -c "SELECT COUNT(*) FROM public.tickets;"'
+    ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+
+In week-9/backup.sh line 42:
+  'pg_dump -U "$POSTGRES_USER" -d "$POSTGRES_DB" --format=custom' > "$PARTIAL"
+  ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+
+In week-9/backup.sh line 59:
+ls -1t "$BACKUPS"/db-*.dump | tail -n +$((KEEP + 1)) | xargs -r rm --
+^-------------------------^ SC2012 (info): Use find instead of ls to better handle non-alphanumeric filenames.
+
+
+In week-9/check.sh line 13:
+  'pg_isready -U "$POSTGRES_USER" -d "$POSTGRES_DB"' >/dev/null 2>&1; then
+  ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+
+In week-9/check.sh line 27:
+newest="$(ls -1t "$HOME"/backups/db-*.dump 2>/dev/null | head -n 1 || true)"
+          ^-- SC2012 (info): Use find instead of ls to better handle non-alphanumeric filenames.
+
+
+In week-9/restore.sh line 24:
+  'pg_restore -U "$POSTGRES_USER" -d "$POSTGRES_DB" --clean --if-exists --no-owner --exit-on-error' < "$FILE"
+  ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+
+In week-9/sql.sh line 15:
+    'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -v ON_ERROR_STOP=1 "$@"' sh "$@"
+    ^-- SC2016 (info): Expressions don't expand in single quotes, use double quotes for that.
+
+For more information:
+  https://www.shellcheck.net/wiki/SC2012 -- Use find instead of ls to better ...
+  https://www.shellcheck.net/wiki/SC2016 -- Expressions don't expand in singl...
+ShellCheck pipeline exit code: 123

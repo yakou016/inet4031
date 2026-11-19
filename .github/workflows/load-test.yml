@@ -2,11 +2,6 @@ name: Performance smoke test
 
 on:
   pull_request:
-    paths:
-      - "week-4/app/**"
-      - "week-4/docker-compose.yml"
-      - "week-10/smoke-test.js"
-      - ".github/workflows/load-test.yml"
   workflow_dispatch:
 
 permissions:

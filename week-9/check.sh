@@ -9,6 +9,8 @@ failed=0
 ok()  { echo "PASS  $*"; }
 bad() { echo "FAIL  $*"; failed=1; }
 
+# Database variables must expand inside the pod, not on the VM.
+# shellcheck disable=SC2016
 if kubectl exec deploy/db -- sh -c \
   'pg_isready -U "$POSTGRES_USER" -d "$POSTGRES_DB"' >/dev/null 2>&1; then
   ok "database accepts connections"
@@ -24,7 +26,12 @@ else
   bad "exporter is unavailable or pg_up is not 1"
 fi
 
-newest="$(ls -1t "$HOME"/backups/db-*.dump 2>/dev/null | head -n 1 || true)"
+newest=""
+IFS= read -r -d '' newest < <(
+  find "$HOME/backups" -maxdepth 1 -type f -name 'db-*.dump' \
+    -printf '%T@ %p\0' 2>/dev/null |
+    sort -z -nr | head -z -n 1 | cut -z -d ' ' -f 2-
+) || true
 if [ -z "$newest" ]; then
   bad "no database backups found"
 else

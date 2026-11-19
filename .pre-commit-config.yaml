@@ -1,0 +1,20 @@
+repos:
+  - repo: local
+    hooks:
+      - id: shellcheck
+        name: ShellCheck
+        entry: shellcheck
+        language: system
+        types: [shell]
+
+      - id: hadolint
+        name: Hadolint
+        entry: hadolint
+        language: system
+        files: ^week-4/app/Dockerfile$
+
+      - id: yamllint
+        name: YAML lint
+        entry: bash capstone/devsecops-pm/scripts/lint-yaml.sh
+        language: system
+        types: [yaml]

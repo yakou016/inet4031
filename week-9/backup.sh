@@ -22,6 +22,8 @@ if ! kubectl get nodes --request-timeout=10s >/dev/null 2>&1 ||
 fi
 
 rows() {
+  # Database variables must expand inside the pod, not on the VM.
+  # shellcheck disable=SC2016
   kubectl exec deploy/db -- sh -c \
     'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -tA -v ON_ERROR_STOP=1 -c "SELECT COUNT(*) FROM public.tickets;"'
 }
@@ -38,6 +40,8 @@ FILE="$BACKUPS/db-$(date +%Y%m%d-%H%M%S).dump"
 PARTIAL="$FILE.partial"
 trap 'rm -f -- "$PARTIAL"' EXIT
 
+# Database variables must expand inside the pod, not on the VM.
+# shellcheck disable=SC2016
 kubectl exec deploy/db -- sh -c \
   'pg_dump -U "$POSTGRES_USER" -d "$POSTGRES_DB" --format=custom' > "$PARTIAL"
 
@@ -56,5 +60,10 @@ if [ "$after" != "$before" ]; then
 fi
 
 mv -- "$PARTIAL" "$FILE"
-ls -1t "$BACKUPS"/db-*.dump | tail -n +$((KEEP + 1)) | xargs -r rm --
+find "$BACKUPS" -maxdepth 1 -type f -name 'db-*.dump' \
+  -printf '%T@ %p\0' |
+  sort -z -nr |
+  tail -z -n "+$((KEEP + 1))" |
+  cut -z -d ' ' -f 2- |
+  xargs -0 -r rm --
 log "Backed up $before tickets to $FILE"

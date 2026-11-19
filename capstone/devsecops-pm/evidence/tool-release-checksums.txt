@@ -1,0 +1,4 @@
+Hadolint release asset
+hadolint-linux-x86_64	sha256:c7187db94eeeeca956519a6af171adc31453941a1e777961f6e680f697c8c507
+Trivy release asset
+trivy_0.76.2_Linux-64bit.tar.gz	sha256:bc0fc726e017b8927a62b2d3531d7a84ee01769daf5c99ed866dced54089fdbf
