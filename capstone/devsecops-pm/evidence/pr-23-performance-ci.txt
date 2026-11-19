@@ -1,0 +1,640 @@
+performance smoke test	Set up job	﻿2026-11-19T02:32:40.1717598Z Current runner version: '2.338.2'
+performance smoke test	Set up job	2026-11-19T02:32:40.1736321Z ##[group]Runner Image Provisioner
+performance smoke test	Set up job	2026-11-19T02:32:40.1736887Z Hosted Compute Agent
+performance smoke test	Set up job	2026-11-19T02:32:40.1737268Z Version: 20261111.635
+performance smoke test	Set up job	2026-11-19T02:32:40.1737674Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+performance smoke test	Set up job	2026-11-19T02:32:40.1738115Z Build Date: 2026-11-11T01:49:01Z
+performance smoke test	Set up job	2026-11-19T02:32:40.1738522Z Worker ID: {402bd949-40ec-4fff-b5d0-72fc97767659}
+performance smoke test	Set up job	2026-11-19T02:32:40.1738934Z Region: centralus
+performance smoke test	Set up job	2026-11-19T02:32:40.1739290Z Cloud: Azure
+performance smoke test	Set up job	2026-11-19T02:32:40.1739640Z ##[endgroup]
+performance smoke test	Set up job	2026-11-19T02:32:40.1740616Z ##[group]Operating System
+performance smoke test	Set up job	2026-11-19T02:32:40.1740960Z Ubuntu
+performance smoke test	Set up job	2026-11-19T02:32:40.1741321Z 26.04.1
+performance smoke test	Set up job	2026-11-19T02:32:40.1741658Z LTS
+performance smoke test	Set up job	2026-11-19T02:32:40.1741986Z ##[endgroup]
+performance smoke test	Set up job	2026-11-19T02:32:40.1742346Z ##[group]Runner Image
+performance smoke test	Set up job	2026-11-19T02:32:40.1742700Z Image: ubuntu-26.04
+performance smoke test	Set up job	2026-11-19T02:32:40.1743103Z Version: 20261116.202.1
+performance smoke test	Set up job	2026-11-19T02:32:40.1743705Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+performance smoke test	Set up job	2026-11-19T02:32:40.1744753Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+performance smoke test	Set up job	2026-11-19T02:32:40.1745453Z ##[endgroup]
+performance smoke test	Set up job	2026-11-19T02:32:40.1746157Z ##[group]GITHUB_TOKEN Permissions
+performance smoke test	Set up job	2026-11-19T02:32:40.1747361Z Contents: read
+performance smoke test	Set up job	2026-11-19T02:32:40.1747757Z Metadata: read
+performance smoke test	Set up job	2026-11-19T02:32:40.1748080Z ##[endgroup]
+performance smoke test	Set up job	2026-11-19T02:32:40.1750149Z Secret source: Actions
+performance smoke test	Set up job	2026-11-19T02:32:40.1750880Z Cache mode: write
+performance smoke test	Set up job	2026-11-19T02:32:40.1751500Z Prepare workflow directory
+performance smoke test	Set up job	2026-11-19T02:32:40.2029135Z Prepare all required actions
+performance smoke test	Set up job	2026-11-19T02:32:40.2060342Z Getting action download info
+performance smoke test	Set up job	2026-11-19T02:32:40.4377734Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+performance smoke test	Set up job	2026-11-19T02:32:40.5845364Z Complete job name: performance smoke test
+performance smoke test	Check out the repository	﻿2026-11-19T02:32:40.6421042Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6421735Z with:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6422069Z   persist-credentials: false
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6422431Z   repository: yakou016/inet4031
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6425248Z   token: ***
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6425538Z   ssh-strict: true
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6425792Z   ssh-user: git
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6426193Z   clean: true
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6426531Z   sparse-checkout-cone-mode: true
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6426935Z   fetch-depth: 1
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6427203Z   fetch-tags: false
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6427454Z   show-progress: true
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6427707Z   lfs: false
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6427939Z   submodules: false
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6428194Z   set-safe-directory: true
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6428482Z   allow-unsafe-pr-checkout: false
+performance smoke test	Check out the repository	2026-11-19T02:32:40.6428851Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8816440Z Syncing repository: yakou016/inet4031
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8817769Z ##[group]Getting Git version info
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8818157Z Working directory is '/home/runner/work/inet4031/inet4031'
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8818970Z [command]/usr/bin/git version
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8848628Z git version 2.56.1
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8861569Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8906263Z Temporarily overriding HOME='/home/runner/work/_temp/6313b787-d6b0-4618-8dd4-a1260d91fc0a' before making global git config changes
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8907311Z Adding repository directory to the temporary git global config as a safe directory
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8907936Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inet4031/inet4031
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8945616Z Deleting the contents of '/home/runner/work/inet4031/inet4031'
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8947825Z ##[group]Determining repository object format
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8949259Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8949663Z ##[group]Initializing the repository
+performance smoke test	Check out the repository	2026-11-19T02:32:40.8953206Z [command]/usr/bin/git init /home/runner/work/inet4031/inet4031
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9053111Z hint: Using 'master' as the name for the initial branch. This default branch name
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9054310Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9055653Z hint: to use in all of your new repositories, which will suppress this warning,
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9056450Z hint: call:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9056905Z hint:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9057367Z hint: 	git config --global init.defaultBranch <name>
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9057855Z hint:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9058185Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9058706Z hint: 'development'. The just-created branch can be renamed via this command:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9059225Z hint:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9059564Z hint: 	git branch -m <name>
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9059944Z hint:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9060463Z hint: Disable this message with "git config set advice.defaultBranchName false"
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9064610Z Initialized empty Git repository in /home/runner/work/inet4031/inet4031/.git/
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9076722Z [command]/usr/bin/git remote add origin https://github.com/yakou016/inet4031
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9129766Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9130518Z ##[group]Disabling automatic garbage collection
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9132141Z [command]/usr/bin/git config --local gc.auto 0
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9162746Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9163470Z ##[group]Setting up auth
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9163928Z Removing SSH command configuration
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9167449Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9199251Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9600345Z Removing HTTP extra header
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9605807Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9635455Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9875814Z Removing includeIf entries pointing to credentials config files
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9880503Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+performance smoke test	Check out the repository	2026-11-19T02:32:40.9912599Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0150691Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0184738Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inet4031/inet4031/.git.path /home/runner/work/_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0213232Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/inet4031/inet4031/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0244295Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0271616Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0297303Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0297760Z ##[group]Fetching the repository
+performance smoke test	Check out the repository	2026-11-19T02:32:41.0302433Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6004a8c7ecf3e14683aea99477e9f9aa6560959d:refs/remotes/pull/23/merge
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3421461Z From https://github.com/yakou016/inet4031
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3422197Z  * [new ref]         6004a8c7ecf3e14683aea99477e9f9aa6560959d -> pull/23/merge
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3425941Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3426767Z ##[group]Determining the checkout info
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3430092Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3430785Z [command]/usr/bin/git sparse-checkout disable
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3478843Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3505225Z ##[group]Checking out the ref
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3507877Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/23/merge
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3580920Z Note: switching to 'refs/remotes/pull/23/merge'.
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3581288Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3581547Z You are in 'detached HEAD' state. You can look around, make experimental
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3582187Z changes and commit them, and you can discard any commits you make in this
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3582730Z state without impacting any branches by switching back to a branch.
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3583051Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3583290Z If you want to create a new branch to retain commits you create, you may
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3583865Z do so (now or later) by using -c with the switch command. Example:
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3584164Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3584306Z   git switch -c <new-branch-name>
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3584505Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3584642Z Or undo this operation with:
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3584832Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3585160Z   git switch -
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3585566Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3586098Z Turn off this advice by setting config variable advice.detachedHead to false
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3586432Z
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3586822Z HEAD is now at 6004a8c Merge a3e2e912be05c8d3a3b1df07bb4c26285e24c12c into d2b8e7fb92e99df7c216c0e32cbe868da9c463e0
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3590568Z ##[endgroup]
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3631991Z [command]/usr/bin/git log -1 --format=%H
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3655205Z 6004a8c7ecf3e14683aea99477e9f9aa6560959d
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3664594Z ##[group]Removing auth
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3665171Z Removing SSH command configuration
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3665852Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3692013Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3922623Z Removing HTTP extra header
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3926051Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+performance smoke test	Check out the repository	2026-11-19T02:32:41.3954528Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4178338Z Removing includeIf entries pointing to credentials config files
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4180255Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4202259Z includeif.gitdir:/home/runner/work/inet4031/inet4031/.git.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4203134Z includeif.gitdir:/home/runner/work/inet4031/inet4031/.git/worktrees/*.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4203635Z includeif.gitdir:/github/workspace/.git.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4204044Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4210417Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inet4031/inet4031/.git.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4230409Z /home/runner/work/_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4239208Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inet4031/inet4031/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-a3ad3fae\-8ced\-43d0\-b6cc\-0d21e760685b\.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4272429Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/inet4031/inet4031/.git/worktrees/*.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4292062Z /home/runner/work/_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4300086Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/inet4031/inet4031/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-a3ad3fae\-8ced\-43d0\-b6cc\-0d21e760685b\.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4332665Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4352131Z /github/runner_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4357628Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-a3ad3fae\-8ced\-43d0\-b6cc\-0d21e760685b\.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4388442Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4410012Z /github/runner_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4416071Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-a3ad3fae\-8ced\-43d0\-b6cc\-0d21e760685b\.config
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4445107Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4669079Z Removing credentials config '/home/runner/work/_temp/git-credentials-a3ad3fae-8ced-43d0-b6cc-0d21e760685b.config'
+performance smoke test	Check out the repository	2026-11-19T02:32:41.4676143Z ##[endgroup]
+performance smoke test	Start the app and database	﻿2026-11-19T02:32:41.4866554Z ##[group]Run cp week-4/.env.example week-4/.env
+performance smoke test	Start the app and database	2026-11-19T02:32:41.4867102Z [36;1mcp week-4/.env.example week-4/.env[0m
+performance smoke test	Start the app and database	2026-11-19T02:32:41.4867650Z [36;1mdocker compose --env-file week-4/.env -f week-4/docker-compose.yml up -d --build --wait[0m
+performance smoke test	Start the app and database	2026-11-19T02:32:41.4898715Z shell: /usr/bin/bash -e {0}
+performance smoke test	Start the app and database	2026-11-19T02:32:41.4899052Z ##[endgroup]
+performance smoke test	Start the app and database	2026-11-19T02:32:41.6944549Z  Image postgres:16 Pulling
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4190642Z  37fb86c2a767 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4192700Z  57869d2f2b40 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4193634Z  a160a6fee115 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4194558Z  a0a147a27498 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4195594Z  893773e1f215 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4196492Z  a71988767d8f Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4197532Z  0bda6b874f77 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4198391Z  8c5b8924f0a2 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4199347Z  a43692ded922 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4200304Z  7ae4197f54cb Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4201327Z  a37be121ef1e Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4202311Z  a115041a3e47 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.4203325Z  4fefcc83b4c3 Pulling fs layer 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.5973272Z  a37be121ef1e Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6107100Z  57869d2f2b40 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6108258Z  7ae4197f54cb Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6109973Z  a160a6fee115 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6111772Z  a71988767d8f Downloading 2.097MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6113627Z  8c5b8924f0a2 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6119523Z  a0a147a27498 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6122238Z  4fefcc83b4c3 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6124132Z  a43692ded922 Downloading 1.258MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6127571Z  a115041a3e47 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.6129657Z  37fb86c2a767 Downloading 15.73MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7001776Z  0bda6b874f77 Downloading 11.53MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7031854Z  a43692ded922 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7036050Z  37fb86c2a767 Downloading 29.86MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7038283Z  893773e1f215 Downloading 6.291MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7042038Z  a71988767d8f Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7980755Z  893773e1f215 Downloading 6.443MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7985226Z  0bda6b874f77 Downloading 33.55MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7986467Z  8c7e2d1cf628 Downloading 52.15kB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7987750Z  37fb86c2a767 Downloading 29.86MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.7989042Z  51d128040abb Downloading 2.097MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9006948Z  51d128040abb Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9008364Z  893773e1f215 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9009866Z  0bda6b874f77 Downloading 63.96MB
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9021531Z  8c7e2d1cf628 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9024347Z  37fb86c2a767 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9172647Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:42.9973578Z  0bda6b874f77 Downloading 104.9MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.0106652Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.0968479Z  0bda6b874f77 Downloading 119.1MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.1089374Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.1974698Z  0bda6b874f77 Downloading 119.1MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.2071806Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.2970764Z  0bda6b874f77 Downloading 119.1MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.3081872Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.3970285Z  0bda6b874f77 Downloading 119.1MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.4073933Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.4973550Z  0bda6b874f77 Downloading 119.1MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.5042678Z  37fb86c2a767 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.5972536Z  0bda6b874f77 Downloading 119.1MB
+performance smoke test	Start the app and database	2026-11-19T02:32:43.6060512Z  37fb86c2a767 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.6969050Z  0bda6b874f77 Download complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.7017453Z  a0a147a27498 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.7053932Z  a43692ded922 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.7070173Z  893773e1f215 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.8053728Z  a43692ded922 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.8062008Z  a71988767d8f Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.8976385Z  a37be121ef1e Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.8990427Z  57869d2f2b40 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.9026683Z  8c5b8924f0a2 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.9047631Z  a71988767d8f Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:43.9062154Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.0020990Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.1026208Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.2019142Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.3028848Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.4016388Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.5030182Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.6015816Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.7028398Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.8048139Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:44.9019563Z  0bda6b874f77 Extracting 1B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.0015040Z  0bda6b874f77 Extracting 2B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.1027192Z  0bda6b874f77 Extracting 2B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.2025882Z  0bda6b874f77 Extracting 2B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.2976359Z  7ae4197f54cb Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.2982127Z  a160a6fee115 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.2993554Z  4fefcc83b4c3 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.2997293Z  a115041a3e47 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.3016405Z  0bda6b874f77 Pull complete 0B
+performance smoke test	Start the app and database	2026-11-19T02:32:45.3096499Z  Image postgres:16 Pulled
+performance smoke test	Start the app and database	2026-11-19T02:32:45.5038663Z  Image week-4-web Building
+performance smoke test	Start the app and database	2026-11-19T02:32:45.5549205Z #1 [internal] load local bake definitions
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7332272Z #1 reading from stdin 530B done
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7332680Z #1 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7332788Z
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7332903Z #2 [internal] load build definition from Dockerfile
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7333196Z #2 transferring dockerfile: 419B done
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7333435Z #2 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7333542Z
+performance smoke test	Start the app and database	2026-11-19T02:32:45.7333721Z #3 [auth] library/python:pull token for registry-1.docker.io
+performance smoke test	Start the app and database	2026-11-19T02:32:45.8836980Z #3 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:45.8837215Z
+performance smoke test	Start the app and database	2026-11-19T02:32:45.8837407Z #4 [internal] load metadata for docker.io/library/python:3.12-slim
+performance smoke test	Start the app and database	2026-11-19T02:32:46.2279368Z #4 DONE 0.6s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4186119Z
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4187014Z #5 [internal] load .dockerignore
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4187617Z #5 transferring context: 71B done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4188077Z #5 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4188313Z
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4188425Z #6 [internal] load build context
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4188701Z #6 transferring context: 7.57kB done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4188988Z #6 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4189099Z
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4190007Z #7 [1/6] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4190816Z #7 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4191518Z #7 sha256:05e0eee5572e9c9f50408a2132590133b830a668a1cf2ff2b150f19c57707e2b 248B / 248B 0.0s done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.4192139Z #7 sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085 4.19MB / 12.12MB 0.2s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.5482552Z #7 sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085 12.12MB / 12.12MB 0.2s done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.5483137Z #7 sha256:68bced9e0afa4479df17c3646e27c7c7e9ce9ba70c0e6c73b6826487b89037d9 1.29MB / 1.29MB 0.2s done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.5483506Z #7 extracting sha256:68bced9e0afa4479df17c3646e27c7c7e9ce9ba70c0e6c73b6826487b89037d9 0.0s done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.5483759Z #7 DONE 0.3s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.6986315Z
+performance smoke test	Start the app and database	2026-11-19T02:32:46.6987344Z #7 [1/6] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+performance smoke test	Start the app and database	2026-11-19T02:32:46.6987827Z #7 extracting sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085
+performance smoke test	Start the app and database	2026-11-19T02:32:46.7810910Z #7 extracting sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085 0.2s done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.7811420Z #7 DONE 0.5s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9370653Z
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9371468Z #7 [1/6] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9371946Z #7 extracting sha256:05e0eee5572e9c9f50408a2132590133b830a668a1cf2ff2b150f19c57707e2b done
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9372192Z #7 DONE 0.5s
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9372264Z
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9372572Z #8 [2/6] RUN apt-get update     && apt-get install -y --no-install-recommends        zlib1g=1:1.3.dfsg+really1.3.1-1+deb13u1     && rm -rf /var/lib/apt/lists/*
+performance smoke test	Start the app and database	2026-11-19T02:32:46.9835753Z #8 0.197 Hit:1 http://deb.debian.org/debian trixie InRelease
+performance smoke test	Start the app and database	2026-11-19T02:32:47.1139167Z #8 0.201 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+performance smoke test	Start the app and database	2026-11-19T02:32:47.1139641Z #8 0.222 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+performance smoke test	Start the app and database	2026-11-19T02:32:47.1139989Z #8 0.237 Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+performance smoke test	Start the app and database	2026-11-19T02:32:47.1140278Z #8 0.327 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [1108 B]
+performance smoke test	Start the app and database	2026-11-19T02:32:47.2763145Z #8 0.339 Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [325 kB]
+performance smoke test	Start the app and database	2026-11-19T02:32:47.6256556Z #8 0.839 Fetched 10.1 MB in 1s (14.6 MB/s)
+performance smoke test	Start the app and database	2026-11-19T02:32:48.0031330Z #8 0.839 Reading package lists...
+performance smoke test	Start the app and database	2026-11-19T02:32:48.3875564Z #8 1.233 Reading package lists...
+performance smoke test	Start the app and database	2026-11-19T02:32:48.5257147Z #8 1.611 Building dependency tree...
+performance smoke test	Start the app and database	2026-11-19T02:32:48.5257429Z #8 1.739 Reading state information...
+performance smoke test	Start the app and database	2026-11-19T02:32:48.6507918Z #8 1.864 The following packages will be upgraded:
+performance smoke test	Start the app and database	2026-11-19T02:32:48.6508283Z #8 1.864   zlib1g
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8113591Z #8 1.922 1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8114147Z #8 1.922 Need to get 88.7 kB of archives.
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8114514Z #8 1.922 After this operation, 1024 B disk space will be freed.
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8115214Z #8 1.922 Get:1 http://deb.debian.org/debian-security trixie-security/main amd64 zlib1g amd64 1:1.3.dfsg+really1.3.1-1+deb13u1 [88.7 kB]
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8115784Z #8 2.025 debconf: unable to initialize frontend: Dialog
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8116130Z #8 2.025 debconf: (TERM is not set, so the dialog frontend is not usable.)
+performance smoke test	Start the app and database	2026-11-19T02:32:48.8116470Z #8 2.025 debconf: falling back to frontend: Readline
+performance smoke test	Start the app and database	2026-11-19T02:32:48.9661713Z #8 2.025 debconf: unable to initialize frontend: Readline
+performance smoke test	Start the app and database	2026-11-19T02:32:48.9666986Z #8 2.025 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 1.)
+performance smoke test	Start the app and database	2026-11-19T02:32:48.9668587Z #8 2.025 debconf: falling back to frontend: Teletype
+performance smoke test	Start the app and database	2026-11-19T02:32:48.9668787Z #8 2.029 debconf: unable to initialize frontend: Teletype
+performance smoke test	Start the app and database	2026-11-19T02:32:48.9669006Z #8 2.029 debconf: (This frontend requires a controlling tty.)
+performance smoke test	Start the app and database	2026-11-19T02:32:48.9669212Z #8 2.029 debconf: falling back to frontend: Noninteractive
+performance smoke test	Start the app and database	2026-11-19T02:32:49.2082977Z #8 2.422 Fetched 88.7 kB in 0s (1471 kB/s)
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4065793Z #8 2.433 (Reading database ...
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066063Z (Reading database ... 5%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066207Z (Reading database ... 10%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066354Z (Reading database ... 15%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066483Z (Reading database ... 20%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066636Z (Reading database ... 25%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066791Z (Reading database ... 30%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4066916Z (Reading database ... 35%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4067041Z (Reading database ... 40%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4067165Z (Reading database ... 45%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4067288Z (Reading database ... 50%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4067412Z (Reading database ... 55%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4067538Z (Reading database ... 60%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4067890Z (Reading database ... 65%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068024Z (Reading database ... 70%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068150Z (Reading database ... 75%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068277Z (Reading database ... 80%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068400Z (Reading database ... 85%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068526Z (Reading database ... 90%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068655Z (Reading database ... 95%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068784Z (Reading database ... 100%
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4068976Z (Reading database ... 5658 files and directories currently installed.)
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4069434Z #8 2.439 Preparing to unpack .../zlib1g_1%3a1.3.dfsg+really1.3.1-1+deb13u1_amd64.deb ...
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4069925Z #8 2.442 Unpacking zlib1g:amd64 (1:1.3.dfsg+really1.3.1-1+deb13u1) over (1:1.3.dfsg+really1.3.1-1+b1) ...
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4070362Z #8 2.460 Setting up zlib1g:amd64 (1:1.3.dfsg+really1.3.1-1+deb13u1) ...
+performance smoke test	Start the app and database	2026-11-19T02:32:49.4070694Z #8 2.469 Processing triggers for libc-bin (2.41-12+deb13u4) ...
+performance smoke test	Start the app and database	2026-11-19T02:32:52.1569203Z #8 DONE 5.4s
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3272441Z
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273122Z #9 [3/6] WORKDIR /app
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273372Z #9 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273449Z
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273512Z #10 [4/6] COPY requirements.txt .
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273771Z #10 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273839Z
+performance smoke test	Start the app and database	2026-11-19T02:32:52.3273943Z #11 [5/6] RUN pip install --no-cache-dir -r requirements.txt
+performance smoke test	Start the app and database	2026-11-19T02:32:53.2164630Z #11 1.039 Collecting Flask==3.0.3 (from -r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.3363317Z #11 1.090   Downloading flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.3363803Z #11 1.159 Collecting psycopg2-binary==2.9.9 (from -r requirements.txt (line 2))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.4417501Z #11 1.170   Downloading psycopg2_binary-2.9.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.4418186Z #11 1.196 Collecting Werkzeug>=3.0.0 (from Flask==3.0.3->-r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.4418631Z #11 1.206   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.4419085Z #11 1.235 Collecting Jinja2>=3.1.2 (from Flask==3.0.3->-r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.4419502Z #11 1.246   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.4419869Z #11 1.265 Collecting itsdangerous>=2.1.2 (from Flask==3.0.3->-r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.5557131Z #11 1.275   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.5557656Z #11 1.298 Collecting click>=8.1.3 (from Flask==3.0.3->-r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.5558350Z #11 1.308   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.5558630Z #11 1.327 Collecting blinker>=1.6.2 (from Flask==3.0.3->-r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.5558900Z #11 1.338   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.5559212Z #11 1.379 Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask==3.0.3->-r requirements.txt (line 1))
+performance smoke test	Start the app and database	2026-11-19T02:32:53.6621098Z #11 1.389   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.6621574Z #11 1.404 Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.6621887Z #11 1.427 Downloading psycopg2_binary-2.9.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.6622736Z #11 1.464    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 106.8 MB/s eta 0:00:00
+performance smoke test	Start the app and database	2026-11-19T02:32:53.6623135Z #11 1.474 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.6623487Z #11 1.485 Downloading click-8.5.1-py3-none-any.whl (126 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.8676846Z #11 1.496 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.8677265Z #11 1.506 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.8677482Z #11 1.516 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.8677821Z #11 1.526 Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+performance smoke test	Start the app and database	2026-11-19T02:32:53.8678585Z #11 1.540 Installing collected packages: psycopg2-binary, MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, Flask
+performance smoke test	Start the app and database	2026-11-19T02:32:53.9943638Z #11 1.817 Successfully installed Flask-3.0.3 Jinja2-3.1.6 MarkupSafe-3.0.4 Werkzeug-3.1.9 blinker-1.9.0 click-8.5.1 itsdangerous-2.2.0 psycopg2-binary-2.9.9
+performance smoke test	Start the app and database	2026-11-19T02:32:54.2208064Z #11 1.817 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+performance smoke test	Start the app and database	2026-11-19T02:32:54.2209082Z #11 1.893
+performance smoke test	Start the app and database	2026-11-19T02:32:54.2209285Z #11 1.893 [notice] A new release of pip is available: 25.0.1 -> 26.3
+performance smoke test	Start the app and database	2026-11-19T02:32:54.2209645Z #11 1.893 [notice] To update, run: pip install --upgrade pip
+performance smoke test	Start the app and database	2026-11-19T02:32:54.2534074Z #11 DONE 2.1s
+performance smoke test	Start the app and database	2026-11-19T02:32:54.4211873Z
+performance smoke test	Start the app and database	2026-11-19T02:32:54.4212473Z #12 [6/6] COPY . .
+performance smoke test	Start the app and database	2026-11-19T02:32:54.4212735Z #12 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:54.4212848Z
+performance smoke test	Start the app and database	2026-11-19T02:32:54.4212935Z #13 exporting to image
+performance smoke test	Start the app and database	2026-11-19T02:32:54.4213139Z #13 exporting layers
+performance smoke test	Start the app and database	2026-11-19T02:32:54.8735515Z #13 exporting layers 0.6s done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0444632Z #13 exporting manifest sha256:7ccad544d4f814aab2640071c7260ed31e139928b79149b05fd3e5a49ec615d0 done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0445511Z #13 exporting config sha256:d7c2054a5c6443bdd9a225109bc732b126f684b53ee35541f2603dcd80821cf3 done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0446141Z #13 exporting attestation manifest sha256:eb4ea9ae2c75469ed43a5d1f414279d4ded38109c06498e3224958f776a64735 done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0446766Z #13 exporting manifest list sha256:ebc965d05b272142e20be5d4cc99dcaab5eb9d2a8cf7419289f3f8f2c1a80e57 done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0447197Z #13 naming to docker.io/library/week-4-web:latest done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0447410Z #13 unpacking to docker.io/library/week-4-web:latest
+performance smoke test	Start the app and database	2026-11-19T02:32:55.0491816Z #13 unpacking to docker.io/library/week-4-web:latest 0.2s done
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1020478Z #13 DONE 0.8s
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1020703Z
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1020809Z #14 resolving provenance for metadata file
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1021058Z #14 DONE 0.0s
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1021232Z  Image week-4-web Built
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1040880Z  Network week-4_default Creating
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1260647Z  Network week-4_default Created
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1264032Z  Volume week-4_db-data Creating
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1274148Z  Volume week-4_db-data Created
+performance smoke test	Start the app and database	2026-11-19T02:32:55.1282352Z  Container week-4-db-1 Creating
+performance smoke test	Start the app and database	2026-11-19T02:32:55.2847572Z  Container week-4-db-1 Created
+performance smoke test	Start the app and database	2026-11-19T02:32:55.2848143Z  Container week-4-web-1 Creating
+performance smoke test	Start the app and database	2026-11-19T02:32:55.3044682Z  Container week-4-web-1 Created
+performance smoke test	Start the app and database	2026-11-19T02:32:55.3158525Z  Container week-4-db-1 Starting
+performance smoke test	Start the app and database	2026-11-19T02:32:55.4481290Z  Container week-4-db-1 Started
+performance smoke test	Start the app and database	2026-11-19T02:32:55.4481677Z  Container week-4-db-1 Waiting
+performance smoke test	Start the app and database	2026-11-19T02:33:00.9498236Z  Container week-4-db-1 Healthy
+performance smoke test	Start the app and database	2026-11-19T02:33:00.9498539Z  Container week-4-web-1 Starting
+performance smoke test	Start the app and database	2026-11-19T02:33:01.0618583Z  Container week-4-web-1 Started
+performance smoke test	Start the app and database	2026-11-19T02:33:01.0619105Z  Container week-4-db-1 Waiting
+performance smoke test	Start the app and database	2026-11-19T02:33:01.0619485Z  Container week-4-web-1 Waiting
+performance smoke test	Start the app and database	2026-11-19T02:33:01.5633744Z  Container week-4-db-1 Healthy
+performance smoke test	Start the app and database	2026-11-19T02:33:11.5628177Z  Container week-4-web-1 Healthy
+performance smoke test	Add 10,000 synthetic tickets	﻿2026-11-19T02:33:11.5707322Z ##[group]Run set -a
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5707503Z [36;1mset -a[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5707635Z [36;1m. week-4/.env[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5707754Z [36;1mset +a[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5707957Z [36;1mdocker compose --env-file week-4/.env -f week-4/docker-compose.yml exec -T db \[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5708254Z [36;1m  psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -v ON_ERROR_STOP=1 -c \[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5708504Z [36;1m  "INSERT INTO tickets (title, description, status, created_at)[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5708728Z [36;1m   SELECT 'Seeded ticket ' || g,[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5708923Z [36;1m          'Synthetic description for seeded ticket number ' || g,[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5709148Z [36;1m          (ARRAY['open','in_progress','closed'])[1 + (g % 3)],[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5709348Z [36;1m          now() - (g || ' minutes')::interval[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5709524Z [36;1m   FROM generate_series(1, 10000) g"[0m
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5738101Z shell: /usr/bin/bash -e {0}
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.5738290Z ##[endgroup]
+performance smoke test	Add 10,000 synthetic tickets	2026-11-19T02:33:11.7118073Z INSERT 0 10000
+performance smoke test	Install k6	﻿2026-11-19T02:33:11.7286333Z ##[group]Run curl -fsSL -o /tmp/k6.tgz https://github.com/grafana/k6/releases/download/v2.3.0/k6-v2.3.0-linux-amd64.tar.gz
+performance smoke test	Install k6	2026-11-19T02:33:11.7287152Z [36;1mcurl -fsSL -o /tmp/k6.tgz https://github.com/grafana/k6/releases/download/v2.3.0/k6-v2.3.0-linux-amd64.tar.gz[0m
+performance smoke test	Install k6	2026-11-19T02:33:11.7287791Z [36;1mecho "39c3117b6af817592dcd0ce4242105c0a7af10948c2a425306f0be8f7a8a8ab1  /tmp/k6.tgz" | sha256sum -c -[0m
+performance smoke test	Install k6	2026-11-19T02:33:11.7288075Z [36;1mtar -xzf /tmp/k6.tgz -C /tmp[0m
+performance smoke test	Install k6	2026-11-19T02:33:11.7288297Z [36;1msudo install -m 0755 /tmp/k6-v2.3.0-linux-amd64/k6 /usr/local/bin/k6[0m
+performance smoke test	Install k6	2026-11-19T02:33:11.7330756Z shell: /usr/bin/bash -e {0}
+performance smoke test	Install k6	2026-11-19T02:33:11.7330916Z ##[endgroup]
+performance smoke test	Install k6	2026-11-19T02:33:12.5802060Z /tmp/k6.tgz: OK
+performance smoke test	Run the smoke test	﻿2026-11-19T02:33:12.8048718Z ##[group]Run DURATION=30s k6 run --no-color week-10/smoke-test.js
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8049046Z [36;1mDURATION=30s k6 run --no-color week-10/smoke-test.js[0m
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8077924Z shell: /usr/bin/bash -e {0}
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8078104Z ##[endgroup]
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8217039Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8217733Z          /\      Grafana   /‾‾/
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218028Z     /\  /  \     |\  __   /  /
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218226Z    /  \/    \    | |/ /  /   ‾‾\
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218381Z   /          \   |   (  |  (‾)  |
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218529Z  / __________ \  |_|\_\  \_____/
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218615Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218629Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218685Z      execution: local
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8218826Z         script: week-10/smoke-test.js
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8219026Z         output: -
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8219101Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8219276Z      scenarios: (100.00%) 1 scenario, 3 max VUs, 1m0s max duration (incl. graceful stop):
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8219550Z               * default: 3 looping VUs for 30s (gracefulStop: 30s)
+performance smoke test	Run the smoke test	2026-11-19T02:33:12.8219783Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:13.8228719Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:13.8229263Z running (0m01.0s), 3/3 VUs, 0 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:13.8229983Z default   [   3% ] 3 VUs  01.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:14.8230651Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:14.8231297Z running (0m02.0s), 3/3 VUs, 3 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:14.8231601Z default   [   7% ] 3 VUs  02.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:15.8226478Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:15.8227014Z running (0m03.0s), 3/3 VUs, 6 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:15.8227278Z default   [  10% ] 3 VUs  03.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:16.8228145Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:16.8228692Z running (0m04.0s), 3/3 VUs, 9 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:16.8228947Z default   [  13% ] 3 VUs  04.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:17.8227614Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:17.8228090Z running (0m05.0s), 3/3 VUs, 12 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:17.8228344Z default   [  17% ] 3 VUs  05.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:18.8227699Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:18.8228232Z running (0m06.0s), 3/3 VUs, 15 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:18.8228490Z default   [  20% ] 3 VUs  06.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:19.8231692Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:19.8232292Z running (0m07.0s), 3/3 VUs, 18 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:19.8232559Z default   [  23% ] 3 VUs  07.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:20.8228087Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:20.8228643Z running (0m08.0s), 3/3 VUs, 21 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:20.8228897Z default   [  27% ] 3 VUs  08.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:21.8224188Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:21.8224770Z running (0m09.0s), 3/3 VUs, 24 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:21.8225198Z default   [  30% ] 3 VUs  09.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:22.8226085Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:22.8226630Z running (0m10.0s), 3/3 VUs, 27 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:22.8226891Z default   [  33% ] 3 VUs  10.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:23.8231945Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:23.8232544Z running (0m11.0s), 3/3 VUs, 30 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:23.8232793Z default   [  37% ] 3 VUs  11.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:24.8226934Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:24.8227650Z running (0m12.0s), 3/3 VUs, 33 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:24.8228056Z default   [  40% ] 3 VUs  12.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:25.8232424Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:25.8232977Z running (0m13.0s), 3/3 VUs, 36 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:25.8233234Z default   [  43% ] 3 VUs  13.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:26.8223846Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:26.8224462Z running (0m14.0s), 3/3 VUs, 39 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:26.8227267Z default   [  47% ] 3 VUs  14.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:27.8224696Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:27.8225488Z running (0m15.0s), 3/3 VUs, 42 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:27.8225787Z default   [  50% ] 3 VUs  15.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:28.8226285Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:28.8226925Z running (0m16.0s), 3/3 VUs, 45 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:28.8227800Z default   [  53% ] 3 VUs  16.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:29.8231191Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:29.8231845Z running (0m17.0s), 3/3 VUs, 48 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:29.8232180Z default   [  57% ] 3 VUs  17.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:30.8230661Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:30.8231218Z running (0m18.0s), 3/3 VUs, 51 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:30.8231481Z default   [  60% ] 3 VUs  18.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:31.8227968Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:31.8228583Z running (0m19.0s), 3/3 VUs, 54 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:31.8228845Z default   [  63% ] 3 VUs  19.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:32.8227436Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:32.8227983Z running (0m20.0s), 3/3 VUs, 57 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:32.8228241Z default   [  67% ] 3 VUs  20.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:33.8228349Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:33.8228876Z running (0m21.0s), 3/3 VUs, 60 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:33.8229139Z default   [  70% ] 3 VUs  21.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:34.8228722Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:34.8229591Z running (0m22.0s), 3/3 VUs, 63 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:34.8229968Z default   [  73% ] 3 VUs  22.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:35.8233591Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:35.8234241Z running (0m23.0s), 3/3 VUs, 66 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:35.8234522Z default   [  77% ] 3 VUs  23.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:36.8226634Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:36.8227242Z running (0m24.0s), 3/3 VUs, 69 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:36.8227514Z default   [  80% ] 3 VUs  24.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:37.8231006Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:37.8231664Z running (0m25.0s), 3/3 VUs, 72 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:37.8231939Z default   [  83% ] 3 VUs  25.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:38.8230484Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:38.8231053Z running (0m26.0s), 3/3 VUs, 75 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:38.8231309Z default   [  87% ] 3 VUs  26.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:39.8232159Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:39.8232715Z running (0m27.0s), 3/3 VUs, 78 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:39.8232980Z default   [  90% ] 3 VUs  27.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:40.8231861Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:40.8232506Z running (0m28.0s), 3/3 VUs, 81 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:40.8232810Z default   [  93% ] 3 VUs  28.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:41.8231359Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:41.8232041Z running (0m29.0s), 3/3 VUs, 84 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:41.8232405Z default   [  97% ] 3 VUs  29.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:42.8228844Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:42.8229434Z running (0m30.0s), 3/3 VUs, 87 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:42.8229745Z default   [ 100% ] 3 VUs  30.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2023167Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2023225Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2023981Z   █ THRESHOLDS
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2024166Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2024237Z     checks
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2024461Z     ✓ 'rate==1' rate=100.00%
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2024614Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2024736Z     http_req_duration
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2025120Z     ✓ 'p(95)<500' p(95)=11.9ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2025259Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2025337Z       {route:health}
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2025564Z       ✓ 'p(95)<200' p(95)=2.55ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2025715Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2025795Z       {route:homepage}
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026022Z       ✓ 'p(95)<500' p(95)=12.28ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026159Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026235Z     http_req_failed
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026481Z     ✓ 'rate<0.01' rate=0.00%
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026618Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026621Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026713Z   █ TOTAL RESULTS
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026816Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2026880Z     checks_total.......: 450     14.815625/s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2027061Z     checks_succeeded...: 100.00% 450 out of 450
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2042176Z     checks_failed......: 0.00%   0 out of 450
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2042608Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2042728Z     ✓ health returns 200
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2042981Z     ✓ health reports ok
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2043682Z     ✓ homepage returns 200
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2043924Z     ✓ homepage contains ticket list
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2044191Z     ✓ homepage shows 1 to 50 tickets
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2044344Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2044444Z     HTTP
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2045186Z     http_req_duration..............: avg=5.58ms min=631.35µs med=5.31ms max=16.31ms p(90)=11.23ms p(95)=11.9ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2045610Z       { expected_response:true }...: avg=5.58ms min=631.35µs med=5.31ms max=16.31ms p(90)=11.23ms p(95)=11.9ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2045997Z       { route:health }.............: avg=1.41ms min=631.35µs med=1.27ms max=4.22ms  p(90)=2.17ms  p(95)=2.55ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2046321Z       { route:homepage }...........: avg=9.74ms min=6.4ms    med=9.41ms max=16.31ms p(90)=11.91ms p(95)=12.28ms
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2046590Z     http_req_failed................: 0.00%  0 out of 180
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2046781Z     http_reqs......................: 180    5.92625/s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2046898Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2046957Z     EXECUTION
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2047181Z     iteration_duration.............: avg=1.01s  min=1s       med=1.01s  max=1.02s   p(90)=1.01s   p(95)=1.01s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2047449Z     iterations.....................: 90     2.963125/s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2047782Z     vus............................: 3      min=3        max=3
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048008Z     vus_max........................: 3      min=3        max=3
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048191Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048237Z     NETWORK
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048375Z     data_received..................: 3.4 MB 113 kB/s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048557Z     data_sent......................: 13 kB  433 B/s
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048671Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048674Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048676Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048677Z
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2048782Z running (0m30.4s), 0/3 VUs, 90 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:33:43.2049009Z default ✓ [ 100% ] 3 VUs  30s
+performance smoke test	Remove the disposable runner stack	﻿2026-11-19T02:33:43.3261199Z ##[group]Run docker compose --env-file week-4/.env -f week-4/docker-compose.yml down -v
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:43.3261571Z [36;1mdocker compose --env-file week-4/.env -f week-4/docker-compose.yml down -v[0m
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:43.3288978Z shell: /usr/bin/bash -e {0}
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:43.3289145Z ##[endgroup]
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:43.3787144Z  Container week-4-web-1 Stopping
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.4839856Z  Container week-4-web-1 Stopped
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.4840238Z  Container week-4-web-1 Removing
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5001329Z  Container week-4-web-1 Removed
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5001696Z  Container week-4-db-1 Stopping
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5821613Z  Container week-4-db-1 Stopped
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5821947Z  Container week-4-db-1 Removing
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5886983Z  Container week-4-db-1 Removed
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5893410Z  Volume week-4_db-data Removing
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.5893754Z  Network week-4_default Removing
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.6267765Z  Network week-4_default Removed
+performance smoke test	Remove the disposable runner stack	2026-11-19T02:33:53.7278342Z  Volume week-4_db-data Removed
+performance smoke test	Post Check out the repository	﻿2026-11-19T02:33:53.7397078Z Post job cleanup.
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.7980841Z [command]/usr/bin/git version
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8017672Z git version 2.56.1
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8043054Z Temporarily overriding HOME='/home/runner/work/_temp/fe6df1a6-eb43-4ea9-9a62-87a7e7a3919f' before making global git config changes
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8043796Z Adding repository directory to the temporary git global config as a safe directory
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8045158Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/inet4031/inet4031
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8078118Z Removing SSH command configuration
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8082844Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8116766Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8357521Z Removing HTTP extra header
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8362481Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8397778Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8632864Z Removing includeIf entries pointing to credentials config files
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8638642Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+performance smoke test	Post Check out the repository	2026-11-19T02:33:53.8669064Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+performance smoke test	Complete job	﻿2026-11-19T02:33:53.9026916Z Cleaning up orphan processes
