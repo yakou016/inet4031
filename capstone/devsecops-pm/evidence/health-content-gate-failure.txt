@@ -1,0 +1,167 @@
+performance smoke test	Run the smoke test	﻿2026-11-19T02:57:26.7718740Z ##[group]Run DURATION=30s k6 run --no-color week-10/smoke-test.js
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7719270Z [36;1mDURATION=30s k6 run --no-color week-10/smoke-test.js[0m
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7769111Z shell: /usr/bin/bash -e {0}
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7769386Z ##[endgroup]
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7960290Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7962856Z          /\      Grafana   /‾‾/
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7963367Z     /\  /  \     |\  __   /  /
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7963859Z    /  \/    \    | |/ /  /   ‾‾\
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7964334Z   /          \   |   (  |  (‾)  |
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7964669Z  / __________ \  |_|\_\  \_____/
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7964853Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7964859Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7964952Z      execution: local
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7965204Z         script: week-10/smoke-test.js
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7965502Z         output: -
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7965634Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7965897Z      scenarios: (100.00%) 1 scenario, 3 max VUs, 1m0s max duration (incl. graceful stop):
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7966400Z               * default: 3 looping VUs for 30s (gracefulStop: 30s)
+performance smoke test	Run the smoke test	2026-11-19T02:57:26.7966690Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:27.7966671Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:27.7967352Z running (0m01.0s), 3/3 VUs, 0 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:27.7967874Z default   [   3% ] 3 VUs  01.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:28.7973277Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:28.7974016Z running (0m02.0s), 3/3 VUs, 3 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:28.7974614Z default   [   7% ] 3 VUs  02.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:29.7971887Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:29.7972868Z running (0m03.0s), 3/3 VUs, 6 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:29.7974163Z default   [  10% ] 3 VUs  03.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:30.7965491Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:30.7966084Z running (0m04.0s), 3/3 VUs, 9 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:30.7966593Z default   [  13% ] 3 VUs  04.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:31.7967399Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:31.7967999Z running (0m05.0s), 3/3 VUs, 12 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:31.7968566Z default   [  17% ] 3 VUs  05.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:32.7965029Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:32.7965649Z running (0m06.0s), 3/3 VUs, 15 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:32.7966206Z default   [  20% ] 3 VUs  06.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:33.7971170Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:33.7971814Z running (0m07.0s), 3/3 VUs, 18 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:33.7972597Z default   [  23% ] 3 VUs  07.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:34.7968571Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:34.7969197Z running (0m08.0s), 3/3 VUs, 21 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:34.7969910Z default   [  27% ] 3 VUs  08.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:35.7969816Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:35.7970406Z running (0m09.0s), 3/3 VUs, 24 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:35.7970968Z default   [  30% ] 3 VUs  09.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:36.7967238Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:36.7968082Z running (0m10.0s), 3/3 VUs, 27 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:36.7968782Z default   [  33% ] 3 VUs  10.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:37.7965037Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:37.7965652Z running (0m11.0s), 3/3 VUs, 30 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:37.7966208Z default   [  37% ] 3 VUs  11.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:38.7967864Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:38.7968514Z running (0m12.0s), 3/3 VUs, 33 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:38.7969085Z default   [  40% ] 3 VUs  12.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:39.7971133Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:39.7971873Z running (0m13.0s), 3/3 VUs, 36 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:39.7972766Z default   [  43% ] 3 VUs  13.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:40.7964890Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:40.7965621Z running (0m14.0s), 3/3 VUs, 39 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:40.7966398Z default   [  47% ] 3 VUs  14.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:41.7966461Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:41.7967156Z running (0m15.0s), 3/3 VUs, 42 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:41.7967803Z default   [  50% ] 3 VUs  15.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:42.7964381Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:42.7965369Z running (0m16.0s), 3/3 VUs, 45 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:42.7966872Z default   [  53% ] 3 VUs  16.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:43.7964886Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:43.7965471Z running (0m17.0s), 3/3 VUs, 48 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:43.7966031Z default   [  57% ] 3 VUs  17.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:44.7964740Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:44.7965581Z running (0m18.0s), 3/3 VUs, 51 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:44.7966424Z default   [  60% ] 3 VUs  18.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:45.7971644Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:45.7972534Z running (0m19.0s), 3/3 VUs, 54 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:45.7973109Z default   [  63% ] 3 VUs  19.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:46.7968608Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:46.7969297Z running (0m20.0s), 3/3 VUs, 57 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:46.7969862Z default   [  67% ] 3 VUs  20.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:47.7969523Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:47.7970102Z running (0m21.0s), 3/3 VUs, 60 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:47.7970617Z default   [  70% ] 3 VUs  21.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:48.7964689Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:48.7965368Z running (0m22.0s), 3/3 VUs, 63 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:48.7965931Z default   [  73% ] 3 VUs  22.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:49.7968572Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:49.7969305Z running (0m23.0s), 3/3 VUs, 66 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:49.7970056Z default   [  77% ] 3 VUs  23.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:50.7966041Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:50.7966682Z running (0m24.0s), 3/3 VUs, 69 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:50.7967392Z default   [  80% ] 3 VUs  24.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:51.7964321Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:51.7965058Z running (0m25.0s), 3/3 VUs, 72 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:51.7965691Z default   [  83% ] 3 VUs  25.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:52.7965307Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:52.7965785Z running (0m26.0s), 3/3 VUs, 75 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:52.7966499Z default   [  87% ] 3 VUs  26.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:53.7971282Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:53.7971866Z running (0m27.0s), 3/3 VUs, 78 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:53.7972685Z default   [  90% ] 3 VUs  27.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:54.7964184Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:54.7964834Z running (0m28.0s), 3/3 VUs, 81 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:54.7965522Z default   [  93% ] 3 VUs  28.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:55.7970968Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:55.7971756Z running (0m29.0s), 3/3 VUs, 84 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:55.7972779Z default   [  97% ] 3 VUs  29.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:56.7972163Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:56.7973133Z running (0m30.0s), 3/3 VUs, 87 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:56.7973761Z default   [ 100% ] 3 VUs  30.0s/30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2238522Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2238654Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2239450Z   █ THRESHOLDS
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2239907Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2240003Z     checks
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2240273Z     ✗ 'rate==1' rate=80.00%
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2240617Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2240815Z     http_req_duration
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2241255Z     ✓ 'p(95)<500' p(95)=12.16ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2241515Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2241646Z       {route:health}
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2261309Z       ✓ 'p(95)<200' p(95)=3.99ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2261654Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2261801Z       {route:homepage}
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2262489Z       ✓ 'p(95)<500' p(95)=14.83ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2262750Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2262846Z     http_req_failed
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263165Z     ✓ 'rate<0.01' rate=0.00%
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263325Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263329Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263457Z   █ TOTAL RESULTS
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263586Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263684Z     checks_total.......: 450    14.794933/s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2263979Z     checks_succeeded...: 80.00% 360 out of 450
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2264268Z     checks_failed......: 20.00% 90 out of 450
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2264457Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2264571Z     ✓ health returns 200
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2264827Z     ✗ health reports ok
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2265370Z       ↳  0% — ✓ 0 / ✗ 90
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2265618Z     ✓ homepage returns 200
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2265881Z     ✓ homepage contains ticket list
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2266175Z     ✓ homepage shows 1 to 50 tickets
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2266340Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2266419Z     HTTP
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2267160Z     http_req_duration..............: avg=6.01ms  min=744.57µs med=7.5ms  max=20.5ms p(90)=11.27ms p(95)=12.16ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2267918Z       { expected_response:true }...: avg=6.01ms  min=744.57µs med=7.5ms  max=20.5ms p(90)=11.27ms p(95)=12.16ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2268641Z       { route:health }.............: avg=1.78ms  min=744.57µs med=1.33ms max=7.95ms p(90)=2.78ms  p(95)=3.99ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2269240Z       { route:homepage }...........: avg=10.24ms min=7.46ms   med=9.82ms max=20.5ms p(90)=12.16ms p(95)=14.83ms
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2269721Z     http_req_failed................: 0.00%  0 out of 180
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2270052Z     http_reqs......................: 180    5.917973/s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2270257Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2270335Z     EXECUTION
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2270698Z     iteration_duration.............: avg=1.01s   min=1.01s    med=1.01s  max=1.02s  p(90)=1.01s   p(95)=1.01s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2271165Z     iterations.....................: 90     2.958987/s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2271495Z     vus............................: 3      min=3        max=3
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2271840Z     vus_max........................: 3      min=3        max=3
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2272063Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2272141Z     NETWORK
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2272573Z     data_received..................: 3.4 MB 113 kB/s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273085Z     data_sent......................: 13 kB  432 B/s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273282Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273286Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273290Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273293Z
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273465Z running (0m30.4s), 0/3 VUs, 90 complete and 0 interrupted iterations
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.2273879Z default ✓ [ 100% ] 3 VUs  30s
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.3254194Z time="2026-11-19T02:57:57Z" level=error msg="thresholds on metrics 'checks' have been crossed"
+performance smoke test	Run the smoke test	2026-11-19T02:57:57.3282665Z ##[error]Process completed with exit code 99.
